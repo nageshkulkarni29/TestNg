@@ -20,7 +20,7 @@ public class NewTest extends BaseClass{
   public void NewTest() {
 	
 	try{
-	driver.navigate().to("https://www.nseindia.com/");
+	driver.navigate().to("https://aaa.com/");
 	Reporter.log("Browser Launched", 1,true);
 	extenttest.log(LogStatus.PASS, "driver launched","NSE application lauched");
 	}
