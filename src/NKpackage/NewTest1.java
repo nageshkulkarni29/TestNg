@@ -16,14 +16,14 @@ public class NewTest1 extends BaseClass {
   @Test
   public void NewTest1() {
 	  try{
-	  driver.navigate().to("https://www.nseindia.com/");
+	  driver.navigate().to("https://www.aaa.com/");
 	  Reporter.log("Browser Launched", 1,true);
 	  
-	  extenttest.log(LogStatus.PASS, "driver launched","NSE application lauched");
+	  extenttest.log(LogStatus.PASS, "driver launched","application lauched");
 	  extenttest.log(LogStatus.PASS, "Verify Title",driver.getTitle());
 	  }
 	  catch(Exception e){
-		  extenttest.log(LogStatus.FAIL, "driver launched failed ","NSE application lauched failed");  
+		  extenttest.log(LogStatus.FAIL, "driver launched failed ","application lauched failed");  
 	  }
   }
   
@@ -38,7 +38,7 @@ public class NewTest1 extends BaseClass {
   public void afterTest() {
 	  CloseWebdriver();
 	  Reporter.log("Browser Closed", 2,true);
-	  extenttest.log(LogStatus.PASS, "driver closed","NSE application Closed");
+	  extenttest.log(LogStatus.PASS, "driver closed","application Closed");
   }
 
 }
