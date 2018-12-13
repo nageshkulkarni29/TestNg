@@ -22,10 +22,10 @@ public class NewTest extends BaseClass{
 	try{
 	driver.navigate().to("https://aaa.com/");
 	Reporter.log("Browser Launched", 1,true);
-	extenttest.log(LogStatus.PASS, "driver launched","NSE application lauched");
+	extenttest.log(LogStatus.PASS, "driver launched","application lauched");
 	}
 	catch(Exception e){
-		extenttest.log(LogStatus.FAIL, "driver launched to fail","NSE application lauch failed");
+		extenttest.log(LogStatus.FAIL, "driver launched to fail","application lauch failed");
 	}
 	  
   }
@@ -42,7 +42,7 @@ public class NewTest extends BaseClass{
 	  CloseWebdriver();
 	  Reporter.log("Browser Closed", 1,true);
 	  //extenttest.log(LogStatus.PASS,"driver closed succesfully");
-	  extenttest.log(LogStatus.PASS, "driver closed","NSE application closed");
+	  extenttest.log(LogStatus.PASS, "driver closed","application closed");
   }
 
 }
